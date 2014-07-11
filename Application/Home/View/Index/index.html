@@ -1,0 +1,81 @@
+<include file="Public/header" />
+<div class="container wrap">
+
+<div class="row inner edge">
+    <div id="main" class="col-xs-12 col-md-9" data-current="1040000000089387">
+                <div id="tag-detail">
+            <div class="tag-detail-img">
+                <img class="big-tag-img" src="__PUBLIC__/images/php.png" alt="php">
+                            </div>
+            
+            <h1>php</h1>
+
+            <div class="excerpt">
+                <p>
+                                PHP，是英文超级文本预处理语言 Hypertext Preprocessor 的缩写。PHP 是一种 HTML 内嵌式的语言，是一种在服务器端执行的嵌入 HTML 文档的脚本语言，语言的风格有类似于C语言，被广泛的运用。
+                                </p>
+
+                
+                <div class="post-action">
+                                                                                                                    </div>
+            </div>
+        </div><!-- end #tag-detail -->
+        
+        <div class="tab-nav clearfix">
+            <div style="margin-bottom: 10px">
+                <a href="{:U('Question/SubQ')}" class="btn btn-default btn-l sub-ask">+ 提问</a>
+                <form class="sub-search" action="">
+                    <label for="text" class="hid">在标签下搜索</label>
+                    <input type="text" name="q" autocomplete="off" placeholder="在标签下搜索" class="form-control text-27 input-search" value="">
+                </form>
+            </div>
+            <nav class="sub-tab">
+                <a class="current" href="./php 最新的问题 - SegmentFault_files/php 最新的问题 - SegmentFault.htm">最新的</a>
+                <a href="http://segmentfault.com/t/php/votes">投票最多的</a>
+                <a href="http://segmentfault.com/t/php/accepted">已完结的</a>
+                <a href="http://segmentfault.com/t/php/unanswered">未回答的</a>
+            </nav>
+        </div>
+
+        <div id="content">
+            <volist name="list" id="val">
+            <article class="post" id="q-1010000000602037">
+                <div class="status">
+                    <span class="answer answered" title="1 个答案">{$val.pingnums}</span>
+                    <span class="vote" title="0 个投票">0</span>
+                </div>
+                <div class="p-summary">
+                    <a class="author" data-toggle="tooltip" data-placement="bottom" rel="tooltip" href="http://segmentfault.com/u/wapeyang" title="" data-original-title="WapeYang • 93"><img class="avatar-40" src="http://soso.coderlife.cn/ucenter/avatar.php?uid={$val.uid}&size=small" alt="WapeYang"></a>
+                    <h2><a href="#" title="{$val.title}">{$val.title}</a></h2>
+                    <div class="meta">
+                        <span class="views"><i class="i-view"></i> {$val.click} 次浏览</span>&nbsp;
+                                                <ul class="meta-tags">
+                            <li><i class="i-tag"></i></li>
+                                                        <li>
+                                <a  href="#">php</a>                            </li>
+                                                    </ul>&nbsp;
+                                                <span class="datetime"><i class="i-time"></i> {$val.time}</span>
+                    </div>
+                                    </div>
+            </article>
+            </volist>
+       
+
+                <!-- <div class="page-nav"><ul class="pagination"><li class="active"><a href="http://segmentfault.com/t/php/newest?page=1">1</a></li><li><a href="http://segmentfault.com/t/php/newest?page=2">2</a></li><li><a href="http://segmentfault.com/t/php/newest?page=3">3</a></li><li><a href="http://segmentfault.com/t/php/newest?page=4">4</a></li><li><a href="http://segmentfault.com/t/php/newest?page=5">5</a></li><li class="disabled"><span>…</span></li><li><a class="next" href="http://segmentfault.com/t/php/newest?page=2">下一页</a></li></ul></div>        </div> --><!-- end #content -->
+
+    </div><!-- end #main -->
+   <!-- end #secondary -->
+</div>
+
+
+</div><!-- end .wrap -->
+
+
+
+
+
+
+
+
+
+</body></html>

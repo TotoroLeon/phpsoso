@@ -1,0 +1,61 @@
+<html>
+<head>
+	<link rel="stylesheet" href="__PUBLIC__/kindeditor/themes/default/default.css" />
+	<link rel="stylesheet" href="__PUBLIC__/kindeditor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="__PUBLIC__/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/kindeditor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/kindeditor/plugins/code/prettify.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content1"]', {
+				cssPath : '../plugins/code/prettify.css',
+				uploadJson : '../php/upload_json.php',
+				fileManagerJson : '../php/file_manager_json.php',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+				}
+			});
+			prettyPrint();
+		});
+	</script>
+	<style type="text/css">
+	  .box{
+	    background-color:#eeeeee;
+	    width: 1140px;
+	    height: 520px;
+	    margin: 0 auto;
+	    position: relative;
+	    top: 100px;
+	  }
+	</style>
+</head>
+<body>
+<div class="box">
+<form name="example" method="post" action="__APP__/subQ">
+	<div>
+		<table align="center">
+			<tr><td><label>标题</label></td><td><input type="text" name="qtitle" /></td></tr>
+			<tr><td><label>关键字</label></td><td><input type="text" name="qkeywords" /></td></tr>
+		
+		<tr>
+		<td colspan="2">
+			<textarea name="content1" style="width:700px;height:200px;visibility:hidden;"></textarea>
+			<br />
+			<input type="submit" name="button" value="提交内容" /> (提交快捷键: Ctrl + Enter)
+		</td>
+		</tr>
+		</table>
+	</div>
+</form>
+</div>
+</body>
+</html>

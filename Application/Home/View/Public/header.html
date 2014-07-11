@@ -1,0 +1,59 @@
+
+<!--
+          .,,,,,,,,,,. 
+         ,;;;;;;;;;;;;;;, 
+       ,;;;;;;;;;;;)));;(((,,;;;,,_ 
+      ,;;;;;;;;;;'      |)))))))))))\\
+      ;;;;;;/ )''    - /,)))((((((((((\
+      ;;;;' \        ~|\  ))))))))))))))
+      /     /         |   ((((((((((((((
+    /'      \      _/~'    ')|()))))))))
+  /'         `\   />     o_/)))(((((((( 
+/          /' `~~(____ /  ()))))))))))
+|     ---,   \        \     (((((((((( 
+          `\   \~-_____|      )))))))) 
+            `\  |      |_.---.  \ 
+
+-->
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+
+
+<link rel="stylesheet" href="__PUBLIC__/css/php.css">
+<link rel="stylesheet" href="__PUBLIC__/css/php2.css">
+
+
+
+
+
+<link href="http://s.segmentfault.com/img/favicon.ico?14.3.24.8" rel="shortcut icon" type="image/x-icon">
+<link rel="search" type="application/opensearchdescription+xml" href="http://segmentfault.com/opensearch.xml" title="SegmentFault">
+
+<link rel="apple-touch-icon-precomposed" href="http://s.segmentfault.com/img/sf-57.png?14.3.24.8">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://s.segmentfault.com/img/sf-72.png?14.3.24.8">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://s.segmentfault.com/img/sf-114.png?14.3.24.8">
+
+
+</head>
+<body id="body">
+<div class="global-nav">
+    <nav class="global-nav container">
+
+
+        
+        <ul class="user-nav">
+         <if condition="$uid gt 0">
+            <li><a href="#">你好,{$username}</a></li>
+         <else />
+            <li>
+                <a id="login-link" href="{:U('Member/Login/index')}">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+          </if>
+        </ul>
+    </nav><!-- end .global-nav -->
+</div>
+<!-- end .site-header -->
